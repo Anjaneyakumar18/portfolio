@@ -1,0 +1,214 @@
+/* Basic styling for the skills section */
+.skills-section {
+    padding: 40px;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.skills-title {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #007bff;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Flex container for the two skill boxes */
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Styling for individual skill boxes */
+.skills-box {
+    flex: 1;
+    padding: 30px;
+    position: relative;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    min-width: 300px;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+/* Overlay to darken the background */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    z-index: 1;
+}
+
+.skills-box h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.skills-description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #fff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-list li {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+}
+
+.skill-icon {
+    margin-right: 15px;
+    font-size: 1.5rem;
+}
+
+/* Certifications Box Styles */
+.certifications-boxes {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: 100%;
+}
+
+.certifications-box {
+    padding: 20px;
+    width:50%;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    min-width: 300px;
+}
+
+.certifications-box h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.certifications-box p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Certification Image Container */
+.certification-images {
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    gap: 20px;
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: 400px; /* Limit the height for scrolling */
+    padding-right: 10px;
+    margin: 0px;
+}
+
+.certification-images div {
+    position: relative;
+}
+
+.certification-images img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 8px;
+    margin-top: -30px;
+}
+
+/* Hover effect to enlarge image */
+.certification-images img:hover {
+    transform: scale(1.05); /* Enlarge the image on hover */
+}
+.certifications-box:last-child{
+    width:53%
+}
+.certificate-name{
+    margin-bottom: -10px;
+}
+.certificate-name p{
+    color: blue;
+}
+@media (max-width: 768px) {
+    .skills-box{
+        margin-left: -6%;
+    }
+    .certifications-boxes {
+        margin-left: -5%;
+        width: 110%;
+        display: flex;
+        flex-direction: column;
+    }
+    .certifications-box{
+        width:90%;
+    }
+    .certifications-box:last-child{
+        width: 90%;
+    }
+
+    .certifications-box h3 {
+        font-size: 1.5rem;
+    }
+
+    .certifications-box p {
+        font-size: 0.9rem;
+    }
+
+    .certification-images {
+        max-height: 350px;
+    }
+
+    .certification-images img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-title {
+        font-size: 2rem;
+    }
+
+    .skills-box h2 {
+        font-size: 1.5rem;
+    }
+
+    .skills-description {
+        font-size: 0.9rem;
+    }
+
+    .certifications-box h3 {
+        font-size: 1.5rem;
+    }
+
+    .certifications-box p {
+        font-size: 0.9rem;
+    }
+
+    .certification-images img {
+        width: 100%;
+    }
+}
+.certificate-head p{
+    margin: 0px;
+}

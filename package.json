@@ -6,6 +6,8 @@
     "cra-template": "1.2.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-icons": "^5.4.0",
+    "react-router-dom": "^7.1.1",
     "react-scripts": "5.0.1",
     "web-vitals": "^4.2.4"
   },
@@ -38,6 +40,5 @@
   "devDependencies": {
     "gh-pages": "^6.3.0"
   },
-  "homepage": "https://<your-github-username>.github.io/<your-repo-name>"
-
+  "homepage": "https://Anjaneyakumar18.github.io/portfolio"
 }

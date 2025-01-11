@@ -1,0 +1,102 @@
+/* General Styles */
+.workspace-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .workspace-title {
+    font-size: 36px;
+    color: #007acc;
+    margin-bottom: 50px;
+    font-weight: bold;
+  }
+  
+  /* Main Workspace Container */
+  .workspace-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    justify-items: center;
+  }
+  
+  .workspace-box {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  /* Section Titles */
+  .workspace-subtitle {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+  }
+  
+  /* Repository and Project List */
+  .repository-list, .project-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .repository-item, .project-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+  }
+  
+  .repository-image, .project-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+  }
+  
+  .repository-info, .project-info {
+    flex: 1;
+    text-align: left;
+  }
+
+  
+  .repository-button, .project-button {
+    background-color: #007acc;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .repository-button:hover, .project-button:hover {
+    background-color: #005fa3;
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .workspace-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .repository-item, .project-item {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .repository-image, .project-image {
+      margin-bottom: 15px;
+    }
+  }

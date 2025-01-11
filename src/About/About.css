@@ -1,0 +1,112 @@
+/* General Styling */
+.about-section {
+    padding: 60px 20px;
+    background-color: #f4f7fb;
+    text-align: center;
+  }
+  
+  .about-title {
+    font-size: 36px;
+    color: #007acc;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .about-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .about-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+    padding: 0 20px;
+  }
+  
+  /* Education Section Styling */
+  .education-section {
+    margin-top: 60px;
+  }
+  
+  .education-title {
+    font-size: 28px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    font-weight: 600;
+  }
+  
+  .education-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    justify-items: center;
+    padding: 0 20px;
+  }
+  
+  .education-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    text-align: center;
+    width: 100%;
+    max-width: 350px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .education-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .education-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+    border: 3px solid #007acc;
+  }
+  
+  .education-info {
+    color: #333;
+  }
+  
+  .institution-name {
+    font-size: 22px;
+    font-weight: bold;
+    color: #007acc;
+    margin-bottom: 10px;
+  }
+  
+  .education-course {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  .education-percentage {
+    font-size: 18px;
+    color: #777;
+    margin-top: 5px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .education-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .about-content p {
+      font-size: 16px;
+    }
+  
+    .education-title {
+      font-size: 24px;
+    }
+  }
+  
