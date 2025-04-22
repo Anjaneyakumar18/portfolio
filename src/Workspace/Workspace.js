@@ -152,7 +152,7 @@ export default function Workspace() {
                 <p>A collection of fun games including a Box Game, Love Calculator, Drums, Dice, and more, built with JavaScript.</p>
                 <button
                   className="project-button"
-                  onClick={() => window.open('https://github.com/Anjaneyakumar18/front-end-games', '_blank')}
+                  onClick={() => window.open('https://linktr.ee/Games_18')}
                 >
                   Visit Project
                 </button>

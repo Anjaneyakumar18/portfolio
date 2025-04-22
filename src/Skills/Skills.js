@@ -8,7 +8,7 @@ export default function Skills() {
       <div className="skills-container">
         <div 
           className="skills-box data-science" 
-          style={{ backgroundImage: 'url(https://wallpaperaccess.com/full/1325192.jpg)' }}
+          style={{ backgroundImage: 'url(https://www.marktechpost.com/wp-content/uploads/2022/10/Blog-Banner-1-3.jpg)' }}
         >
           <div className="overlay"></div>
           <h2>Data Science Skills</h2>

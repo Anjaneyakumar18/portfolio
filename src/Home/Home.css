@@ -1,208 +1,212 @@
+.home-cover-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-bottom: 5px solid #dcdde1;
+}
 
-  .home-cover-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center; 
-    border-bottom: 5px solid #fff;
-  }
-  
-  .home-head {
-    margin-top: -125px;
-    padding-top: 30px;
-    text-align: center;
-    background-color: #f0f0f0;
-    width: 100%;
-    padding-bottom: 50px;
-  }
-  
-  .home-image-container {
-    width: 200px;
-    height: 200px;
-    margin: 20px auto;
-    border-radius: 15%;
-    overflow: hidden;
-  }
-  
-  .home-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .home-name-title {
-    font-size: 2.5rem;
-    color: #333;
-    margin: 20px 0;
-    font-weight: bold;
-  }
-  
-  .home-basic-box {
-    font-size: 1.2rem;
-    color: #555;
-    background-image: linear-gradient(120deg, #8af886 0%, #858be4 100%);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    display: inline-block;
-    width: 80%;
-  }
-  
-  /* About Section */
-  .home-about-section {
-    padding: 40px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    margin-top: 30px;
-  }
-  
-  .home-section-title {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .home-about-description {
-    font-size: 1.1rem;
-    color: #555;
-    line-height: 1.5;
-    text-align: justify;
-    margin-top: 20px;
-  }
-  
+.home-head {
+  margin-top: -125px;
+  padding-top: 30px;
+  text-align: center;
+  background-color: #121212; /* Deep Blue */
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.home-image-container {
+  width: 200px;
+  height: 200px;
+  margin: 40px auto;
+  border-radius: 20%;
+  overflow: hidden;
+}
+
+.home-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.home-name-title {
+  font-size: 2.5rem;
+  color: #daf8de; /* Soft White */
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.home-basic-box {
+  font-size: 1.2rem;
+  color: #101010; /* Rich Dark Gray */
+  background-image: linear-gradient(120deg, #27aa34 0%, #5435c4 100%); /* Soft Aqua to Purple */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  width: 80%;
+}
+
+/* About Section */
+.home-about-section {
+  padding: 40px;
+  background-color: #1d2618; /* Creamy White */
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.home-section-title {
+  font-size: 2rem;
+  color: #5d6ead; /* Dark Blue */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.home-about-description {
+  font-size: 1.1rem;
+  color: #fff8f8; /* Dim Gray */
+  line-height: 1.5;
+  text-align: justify;
+  margin-top: 20px;
+}
 
 .home-hobbies-section {
-    padding: 40px;
-    background-color: #f9f9f9;
-  }
+  padding: 40px;
+  background-color: #354648; /* Light Cyan */
+}
+
+.home-hobbies-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.home-hobby-box {
+  position: relative;
+  flex: 30%;
+  height: 250px;
+  margin: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  color: rgb(255, 252, 252);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.home-hobby-box:nth-child(1) {
   
-  .home-hobbies-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
+  background-image: url('https://wallpapercave.com/wp/wp4521543.jpg');
+}
+
+.home-hobby-box:nth-child(2) {
   
-  .home-hobby-box {
-    position: relative;
-    flex: 30%;
-    height: 250px;
-    margin: 15px;
-    border-radius: 10px;
-    overflow: hidden;
-    color: rgb(255, 252, 252);
-    text-align: center;
-    display: flex;
-    flex-direction: column; /* Stacks items vertically */
-    justify-content: center; /* Ensures the content is centered vertically */
-    padding: 20px;
-    box-sizing: border-box;
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
-  }
-  .home-hobby-box:nth-child(1) {
-    opacity: 1;
-    background-image: url('https://fancyodds.com/wp-content/uploads/2022/01/Cricket-Poster-Background-2.jpg');
-  }
-  
-  .home-hobby-box:nth-child(2) {
-    background-image: url('https://wallpapercave.com/wp/u5BJPWl.jpg');
-  }
-  
-  .home-hobby-box:nth-child(3) {
-    background-image: url('https://wallpapercave.com/wp/wp11782504.jpg');
-  }
-  .resume {
-    display: inline-block; 
-    border-radius: 10px; 
-    border: 2px solid rgb(159, 159, 250); 
-    padding: 15px 30px; 
-    text-decoration: none; 
-    background-color: white;
-    color: rgb(50, 50, 150);
-    font-weight: bold; 
-    font-size: 1rem; 
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
-    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  background-image: url('https://wallpapercave.com/wp/u5BJPWl.jpg');
+}
+
+.home-hobby-box:nth-child(3) {
+  background-image: url('https://wallpapercave.com/wp/wp11782504.jpg');
+}
+
+.resume {
+  display: inline-block;
+  border-radius: 10px;
+  border: 2px solid #2980b9; /* Rich Blue */
+  padding: 15px 30px;
+  text-decoration: none;
+  background-color: white;
+  color: #2c3e50; /* Dark Slate Blue */
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .resume:hover {
-    transform: scale(1.05); 
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    background-color: rgb(159, 159, 250);
-    color: white
+  transform: scale(1.05);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #2980b9;
+  color: white;
 }
 
-  .home-hobby-box::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.4); 
-    z-index: 1;
+.home-hobby-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.home-hobby-box h3 {
+  z-index: 2;
+  position: relative;
+  color: #f1c40f; /* Soft Gold */
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.home-hobby-box p {
+  z-index: 2;
+  position: relative;
+  color: #ecf0f1; /* Light Silver */
+  font-size: 1rem;
+  margin-top: 0;
+}
+
+.home-hobby-box div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.other-than-cover {
+  margin-top: 120px;
+}
+
+@media (max-width: 768px) {
+  .other-than-cover {
+    margin-top: 90px;
   }
-  
+
+  .home-hobby-box {
+    flex: 1 1 100%;
+    height: 200px;
+  }
+
   .home-hobby-box h3 {
-    z-index: 2;
-    position: relative;
-    color: rgb(40, 90, 133); /* Hobby name color */
-    font-size: 1.5rem;
-    margin-bottom: 10px; /* Adds space between the title and content */
+    font-size: 1.3rem;
   }
-  
+
   .home-hobby-box p {
-    z-index: 2;
-    position: relative;
-    color: rgb(234, 245, 254); /* Content text color */
-    font-size: 1rem;
-    margin-top: 0; /* Removes default margin */
+    font-size: 0.9rem;
   }
-  
-  /* Ensures the content is placed below the title */
-  .home-hobby-box div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
-  .other-than-cover{
-      margin-top: 120px;
-  }
-  
-  @media (max-width: 768px) {
-    .other-than-cover{
-        margin-top:90px;
-    }
-    .home-hobby-box {
-      flex: 1 1 100%;
-      height: 200px; 
-    }
-  
-    .home-hobby-box h3 {
-      font-size: 1.3rem; /* Adjusts the hobby name font size */
-    }
-  
-    .home-hobby-box p {
-      font-size: 0.9rem; /* Adjusts the content text font size */
-    }
-  }
-  .home-personal-skills-section{
-    padding-top: 10px;
-    text-align: center;
-    align-items: center;
-    background-color: rgb(225, 224, 224);
-  }
-  .home-personal-skills-section ul{
-    color: #333;
-    padding-bottom: 20px;
-    list-style-type: none;
-  }
-  .home-personal-skills-section ul li{
-    margin:10px;
-  }
+}
+
+.home-personal-skills-section {
+  padding-top: 10px;
+  text-align: center;
+  align-items: center;
+  background-color: #161616; /* Soft Teal */
+}
+
+.home-personal-skills-section ul {
+  color: #dce4ed; /* Darker Text */
+  padding-bottom: 20px;
+  list-style-type: none;
+}
+
+.home-personal-skills-section ul li {
+  margin: 10px;
+}

@@ -37,7 +37,7 @@ export default function Navbar() {
                     </div>
                     
                     <ul className={menuOpen ? 'active' : ''}>
-                        <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
+                        <li><Link to="/portfolio" onClick={toggleMenu}>Home</Link></li>
                         <li><Link to="/skills" onClick={toggleMenu}>Skills</Link></li>
                         <li><Link to="/workspace" onClick={toggleMenu}>Workspace</Link></li>
                         <li><Link to='/achivements' onClick={toggleMenu}>Achivements</Link></li>
@@ -49,7 +49,7 @@ export default function Navbar() {
                 <div className="navbar">
                     <nav>
                         <ul>
-                            <li><Link to="/">Home</Link></li>
+                            <li><Link to="/portfolio">Home</Link></li>
                             <li><Link to="/skills">Skills</Link></li>
                             <li><Link to="/workspace">Workspace</Link></li>
                             <li><Link to='/achivements'>Achivements</Link></li>
@@ -61,6 +61,7 @@ export default function Navbar() {
 
                 <Routes>
                     <Route path="/" element={<Home />} />
+                    <Route path="/portfolio" element={<Home />} />
                     <Route path="/skills" element={<Skills />} />
                     <Route path="/workspace" element={<Workspace />} />
                     <Route path='/achivements' element={<Achievements />} />

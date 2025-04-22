@@ -6,6 +6,7 @@ function CompetitionBox({ title, description, badges, imageSrc, imageAlt, button
       <h3 className="competition-title">{title}</h3>
       <img className="competition-image" src={imageSrc} alt={imageAlt} /><br/>
 
+
       <p className="competition-description">{description}</p>
       <div className="competition-badges">
         {badges.map((badge, index) => (
@@ -32,9 +33,9 @@ export default function Achievements() {
       <div className="achievements-container">
         <CompetitionBox
           title="Competitive Programming"
-          description="Participate in prestigious coding competitions like TCS CodeVita and LeetCode Weekly Contests."
+          description="Secured TCS-Codevita(2024-2025) rank 0f 8524 and LeetCode Weekly Contests."
           badges={["TCS CodeVita season 12 pre finalist", "5+ LeetCode Weekly Contest"]}
-          imageSrc="https://raw.githubusercontent.com/Anjaneyakumar18/portfolio/main/images/Screenshot%202025-01-11%20180248.png"
+          imageSrc="https://raw.githubusercontent.com/Anjaneyakumar18/portfolio/main/images/Screenshot%202025-04-18%20145628.png"
           imageAlt="TCS CodeVita"
           buttonLabel="Visit Leetcode Weekly Contest"
           buttonUrl="https://leetcode.com/u/anjaneyakumar1804/"

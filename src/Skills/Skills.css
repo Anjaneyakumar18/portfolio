@@ -1,8 +1,9 @@
 /* Basic styling for the skills section */
 .skills-section {
-    padding: 40px;
-    background-color: #f8f9fa;
+    padding: 50px 30px;
+    background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
     color: #333;
+    font-family: 'Roboto', sans-serif;
 }
 
 .skills-title {
@@ -10,40 +11,44 @@
     text-align: center;
     margin-bottom: 40px;
     color: #007bff;
-    font-family: 'Roboto', sans-serif;
     letter-spacing: 2px;
     text-transform: uppercase;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* Flex container for the two skill boxes */
+/* Flex container for the skills section */
 .skills-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     gap: 30px;
 }
 
-/* Styling for individual skill boxes */
+/* Individual skill box styles */
 .skills-box {
-    flex: 1;
+    flex: 1 1 300px;
     padding: 30px;
     position: relative;
+    background: linear-gradient(to bottom right, #007bff, #0056b3);
     border-radius: 12px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    min-width: 300px;
-    background-size: cover;
-    background-position: center;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
     color: #fff;
+
 }
 
-/* Overlay to darken the background */
+.skills-box:hover {
+    transform: translateY(-10px);
+}
+
+/* Overlay effect for skill boxes */
 .overlay {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.4);
     border-radius: 12px;
     z-index: 1;
 }
@@ -52,27 +57,28 @@
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 20px;
-    color: #fff;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    z-index: 2;
 }
 
 .skills-description {
     font-size: 1.2rem;
-    margin-bottom: 20px;
     line-height: 1.6;
-    color: #fff;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    z-index: 2;
 }
 
 .skills-list {
     list-style-type: none;
     padding: 0;
+    margin: 20px 0 0;
+    z-index: 2;
 }
 
 .skills-list li {
     font-size: 1.3rem;
     font-weight: bold;
-    margin: 15px 0;
+    margin: 10px 0;
     display: flex;
     align-items: center;
 }
@@ -82,89 +88,102 @@
     font-size: 1.5rem;
 }
 
-/* Certifications Box Styles */
+/* Certifications container */
 .certifications-boxes {
     margin-top: 60px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
     width: 100%;
 }
 
+/* Individual certification box */
 .certifications-box {
     padding: 20px;
-    width:50%;
+    background: linear-gradient(to bottom, #ffffff, #f1f3f5);
     border-radius: 12px;
-    background-color: #ffffff;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-    min-width: 300px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    width: 48%;
+    min-width: 280px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+
+flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.certifications-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
 .certifications-box h3 {
     font-size: 1.8rem;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     color: #007bff;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .certifications-box p {
     font-size: 1rem;
-    color: #555;
     line-height: 1.5;
-    margin-bottom: 20px;
+    color: #555;
 }
 
-/* Certification Image Container */
+/* Certification Images */
 .certification-images {
     display: flex;
-    flex-direction: column; /* Stack images vertically */
+    flex-direction: column;
     gap: 20px;
-    overflow-y: auto; /* Enable vertical scrolling */
-    max-height: 400px; /* Limit the height for scrolling */
+    overflow-y: auto;
+    max-height: 400px;
     padding-right: 10px;
-    margin: 0px;
-}
-
-.certification-images div {
-    position: relative;
 }
 
 .certification-images img {
     width: 100%;
-    height: auto;
-    object-fit: cover;
-    transition: transform 0.3s ease-in-out;
     border-radius: 8px;
-    margin-top: -30px;
+    transition: transform 0.3s;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Hover effect to enlarge image */
 .certification-images img:hover {
-    transform: scale(1.05); /* Enlarge the image on hover */
+    transform: scale(1.0);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
-.certifications-box:last-child{
-    width:53%
-}
-.certificate-name{
-    margin-bottom: -10px;
-}
-.certificate-name p{
-    color: blue;
-}
+
+/* Small devices styles */
 @media (max-width: 768px) {
-    .skills-box{
-        margin-left: -6%;
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
     }
+
     .certifications-boxes {
-        margin-left: -5%;
-        width: 110%;
-        display: flex;
         flex-direction: column;
     }
-    .certifications-box{
-        width:90%;
-    }
-    .certifications-box:last-child{
+
+    .certifications-box {
         width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-title {
+        font-size: 2.2rem;
+    }
+
+    .skills-box h2 {
+        font-size: 1.5rem;
+    }
+
+    .skills-description {
+        font-size: 1rem;
     }
 
     .certifications-box h3 {
@@ -176,39 +195,65 @@
     }
 
     .certification-images {
-        max-height: 350px;
+        max-height: 300px;
     }
+}
+.skills-box {
+    flex: 1 1 300px;
+    padding: 30px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: #fff;
+  }
+  
+  .skills-box:hover .overlay {
+    background: rgba(0, 0, 0, 0); /* Slight hover effect on the overlay */
+  }
+  
 
-    .certification-images img {
-        width: 100%;
+  /* Certifications container */
+.certifications-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 60px;
+}
+
+/* Individual certification box */
+.certifications-box {
+    padding: 20px;
+    background: linear-gradient(to bottom, #ffffff, #f1f3f5);
+    border-radius: 12px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    width: calc(50% - 20px); /* 2 boxes in a row with spacing */
+    min-width: 280px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.certifications-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Adjust layout for smaller devices */
+@media (max-width: 768px) {
+    .certifications-box {
+        width: calc(100% - 20px); /* Full width in a single column */
     }
 }
 
+/* Very small devices (like phones) */
 @media (max-width: 480px) {
-    .skills-title {
-        font-size: 2rem;
+    .certifications-box {
+        padding: 15px;
     }
-
-    .skills-box h2 {
-        font-size: 1.5rem;
-    }
-
-    .skills-description {
-        font-size: 0.9rem;
-    }
-
-    .certifications-box h3 {
-        font-size: 1.5rem;
-    }
-
-    .certifications-box p {
-        font-size: 0.9rem;
-    }
-
-    .certification-images img {
-        width: 100%;
-    }
-}
-.certificate-head p{
-    margin: 0px;
 }

@@ -40,7 +40,7 @@ export default function About() {
             <div className="education-info">
               <h3 className="institution-name">Sri Chaitnya Jr College, Chilakaluripet</h3>
               <p className="education-course">Intermediate</p>
-              <p className="education-percentage">Percentage: 94%</p>
+              <p className="education-percentage">Percentage: 94%<br/> EAMCET:17314</p>
             </div>
           </div>
 
