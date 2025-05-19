@@ -6,7 +6,8 @@ export default function Home() {
       <div className='other-than-cover'>
         <section className="home-head">
           <div className="home-image-container">
-            <img src="https://raw.githubusercontent.com/Anjaneyakumar18/portfolio/main/images/akpic.jpg" alt="Anjaneya Kumar" className="home-image" />
+            <img src="https://raw.githubusercontent.com/Anjaneyakumar18/portfolio/main/images/ak2.jpg
+" alt="Anjaneya Kumar" className="home-image" />
           </div>
           <h1 className="home-name-title">HI! I am Anjaneya Kumar Ramisetty</h1>
           <div className="home-basic-box">
