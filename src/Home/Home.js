@@ -11,8 +11,8 @@ export default function Home() {
           </div>
           <h1 className="home-name-title">HI! I am Anjaneya Kumar Ramisetty</h1>
           <div className="home-basic-box">
-            B.Tech Grad'2026 | Narasaraopet Engineering College | CSE |
-            Data science and web development enthusiast | Leetcode 500(DSA-Python) | Databases-MySQL
+            B.Tech Grad'2026 | Narasaraopet Engineering College | CSE |Python and java |
+            Machine Learning and web development enthusiast | TCS CODEVITA 2025 rank-8524 | Leetcode 500 with 7 Badges | Databases-MySQL
           </div><br/>
           <br/>
           <a className='resume' href="https://github.com/Anjaneyakumar18/portfolio/raw/main/images/ak_resume.docx
