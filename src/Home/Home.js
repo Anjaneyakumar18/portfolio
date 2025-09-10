@@ -15,7 +15,7 @@ export default function Home() {
             Machine Learning and web development enthusiast | TCS CODEVITA 2025 rank-8524 | Leetcode 500 with 7 Badges | Databases-MySQL
           </div><br/>
           <br/>
-          <a className='resume' href="https://github.com/Anjaneyakumar18/portfolio/raw/main/images/ak_resume.docx
+          <a className='resume' href="https://github.com/Anjaneyakumar18/portfolio/raw/main/images/AnjaneyaKumar_Resume.pdf
 ">Resume</a>
 
         </section>
